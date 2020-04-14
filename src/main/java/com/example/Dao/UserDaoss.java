@@ -13,6 +13,7 @@ public interface UserDaoss  extends JpaRepository<User, Integer>{
 	
 	public List<User>  findBy();
 	
+	//spring data jpa 遇到的问题
 	public List<User> findByAgeGreaterThanOrderByAgeDesc(Integer age);
 	//年龄大于多少
 	public List<User> findByageAfter(Integer age);
