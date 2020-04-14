@@ -12,11 +12,9 @@ public interface UserDaoss  extends JpaRepository<User, Integer>{
 	public User getByuserId(Integer userId);
 	
 	public List<User>  findBy();
-	
+	//年龄大于 多少并按照年龄降序排序
 	public List<User> findByAgeGreaterThanOrderByAgeDesc(Integer age);
-	
-	
-	
+	//After 大于 befor 小于
 	public List<User> findByageAfter(Integer age);
 	
 	@SuppressWarnings("unchecked")
