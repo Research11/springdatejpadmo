@@ -10,5 +10,8 @@ public interface UserServices {
 	public User save(User user);
 	public User save1(User user);
 	public List<User> findByAgeLessThanOrderByAgeDesc(Integer age);
+	
+	public List<User> findByAgeAfter(Integer age);
+	
 	public void deleteByuserId(Integer userId);
 }

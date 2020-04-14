@@ -54,5 +54,10 @@ public class UserServiceImpl implements UserServices{
 		
 		return userDao.findByAgeGreaterThanOrderByAgeDesc(age);
 	}
+	@Override
+	public List<User> findByAgeAfter(Integer age) {
+		
+		return userDao.findByageAfter(age);
+	}
 
 }
