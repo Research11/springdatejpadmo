@@ -15,6 +15,8 @@ public interface UserDaoss  extends JpaRepository<User, Integer>{
 	
 	public List<User> findByAgeGreaterThanOrderByAgeDesc(Integer age);
 	
+	
+	
 	public List<User> findByageAfter(Integer age);
 	
 	@SuppressWarnings("unchecked")
